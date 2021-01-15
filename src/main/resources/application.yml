@@ -1,0 +1,11 @@
+xxl:
+  job:
+    adminAddresses: http://localhost:8080/xxl-job-admin/
+    appname: push-data
+    ip: 192.168.56.1
+    port: 9999
+    logpath: /data/applogs/xxl-job/jobhandler
+    logretentiondays: -1
+    accessToken:
+server:
+  port: 9998
