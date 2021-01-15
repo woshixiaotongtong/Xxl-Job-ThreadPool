@@ -43,7 +43,7 @@ public class DemoTask extends IJobHandler {
         for (int i = 0; i < 10; i++) {
 
             taskExecutor.execute(() -> {
-                pringLogger(total,index);
+                printLogger(total,index);
             });
         }
 
@@ -52,7 +52,7 @@ public class DemoTask extends IJobHandler {
         return SUCCESS;
     }
 
-    public void pringLogger(int total, int index) {
+    public void printLogger(int total, int index) {
         for (int i = 0; i < 5; i++) {
             logger.info("ThreadName{},分片总数{},分片号{}", Thread.currentThread().getName(), total, index);
         }
